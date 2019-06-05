@@ -1,5 +1,7 @@
 # Animated B-Spline.
 
+## About
+
 Given control points of B-spline. These points move within the screen animating the spline.
 
 B-spline is transforming into composite Bezier curve with de Boor algorithm. Bezier curves are interpolated with de Casteljau algorithm.
@@ -18,3 +20,13 @@ Screenshot of application window:
 
 Previously hosted on [bitbucket](https://bitbucket.org/Korchagin/animated-b-spline)
 
+## Building & Running
+
+Requirement: Qt4
+
+```
+$ mkdir build && cd build
+$ cmake -DCMAKE_BUILD_TYPE=Release ..
+$ make
+$ ./bin/Release/BezierCurve
+```
